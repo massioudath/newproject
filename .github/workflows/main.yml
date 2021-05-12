@@ -33,7 +33,7 @@ jobs:
       
     - name: Run Tests
       run: |
-        python manage.py test
+        python ./codes/manage.py test
         python ./codes/manage.py migrate 
     
 
