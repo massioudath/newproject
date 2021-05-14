@@ -33,8 +33,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r ./codes/requirements.txt
         pip install -r ./codes/requirements
-        export JWT_SECRET=${{ secrets.JWT_SECRET }}
-      
+        export JWT_SECRET=${{ secrets.JWT_SECRET }}   
     - name: Run Tests
       run: |
         python ./codes/manage.py test
