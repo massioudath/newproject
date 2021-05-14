@@ -28,9 +28,9 @@ jobs:
       uses: SpicyPizza/create-envfile@v1
       with:
         file_name: ./codes/settings/.env
-    - name: copy env
+    - name: start env
       run:
-        cp -r ./codes/env 
+        source ./codes/env/bin/activate
         
     - name: Run Tests
       run: 
