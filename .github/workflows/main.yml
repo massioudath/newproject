@@ -32,8 +32,7 @@ jobs:
       run: 
         python -m  --no-cache pip install --upgrade pip
         pip install -r  --no-cache ./codes/requirements.txt
-        pip install -r  --no-cache ./codes/requirements
-       
+        pip install -r  --no-cache ./codes/requirements  
     - name: Run Tests
       run: 
         python ./codes/manage.py test
