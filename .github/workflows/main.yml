@@ -29,13 +29,13 @@ jobs:
       with:
         file_name: ./codes/settings/.env       
     - name: Install Dependencies
-      run: |
+      run: 
         python -m pip install --upgrade pip
         pip install -r ./codes/requirements.txt
         pip install -r ./codes/requirements
        
     - name: Run Tests
-      run: |
+      run: 
         python ./codes/manage.py test
         python ./codes/manage.py migrate 
     
