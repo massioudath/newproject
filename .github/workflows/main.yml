@@ -28,7 +28,7 @@ jobs:
       uses: SpicyPizza/create-envfile@v1
       with:
         file_name: ./codes/settings/.env       
-    - name: Install Dependencies
+    #- name: Install Dependencies
       #run: 
         #pip install -r ./codes/requirements.txt
         #pip install -r ./codes/requirements  
