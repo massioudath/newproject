@@ -29,9 +29,9 @@ jobs:
       with:
         file_name: ./codes/settings/.env       
     - name: Install Dependencies
-      run: 
-        pip install -r ./codes/requirements.txt
-        pip install -r ./codes/requirements  
+      #run: 
+        #pip install -r ./codes/requirements.txt
+        #pip install -r ./codes/requirements  
     - name: Run Tests
       run: 
         python ./codes/manage.py test
